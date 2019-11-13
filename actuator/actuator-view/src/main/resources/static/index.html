@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello world vue.js</title>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 生产环境版本，优化了尺寸和速度
+<script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+</head>
+<body>
+	<div id="app" v-bind:title="message_over">{{ message }}</div>
+	<script type="text/javascript">
+		var app = new Vue({
+			el : '#app',
+			data : {
+				message : 'Hello Vue!',
+				message_over : '页面加载于 ' + new Date().toLocaleString()
+			}
+		})
+	</script>
+
+</body>
+</html>
